@@ -1,0 +1,87 @@
+.footer{
+    padding: 40px 0 12px 0;
+    background: $colr__blue;
+    &__list{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        list-style: none;
+        .menu{
+            &__items{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                list-style: none;
+            }
+            &__item{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFFFFF;
+                &:nth-child(1){
+                    font-size: 18px;
+                }
+                .footerdropdown{
+                    &::after{
+                        background: url(../img/Vector2.svg) no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transition: all .3s ease-in;
+                        transition-delay: .5s;
+                    }
+                    &__items{
+                        top: -50%;
+                        left: 200%;
+                        padding: 10px;
+                        gap: 8px;
+                       li{
+                        font-size: 15px;
+                       }
+                    }
+                }
+            }
+            &__logo{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+                &__icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 55px;
+                    height: 55px;
+                    background: url(../img/logo.png) no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+                &__name{
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    &__item{
+        width: 260px;
+    }
+    &__author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        &__item{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #D3D3D3;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.support{
+    padding: 30px 0;
+    &__title{
+        @extend .subscriptions__title;
+    }
+    &__cards{
+        display: grid;
+        grid-template-rows: 300px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "c1 c2 c3"
+        "c4 c4 c4";
+        gap: 16px;
+        .card{
+            position: relative;
+            padding: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            background: $crd__bckgr;
+            box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+            border-radius: $crd__radius;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 173px;
+                height: 173px;
+                background: url(../../img/bell.png) no-repeat transparent;
+                background-position: center;
+                background-size: contain;
+            }
+            &__container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                gap: 25px;
+                height: 110px;
+                width: 55%;
+            }
+            &__title{
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 140%;
+                color: #171717;
+            }
+            &__desc{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #333333;
+            }
+        }
+        .card1{
+            grid-area: c1;
+        }
+        .card2{
+            grid-area: c2;
+            &::before{
+                background: url(../../img/chat.png) no-repeat transparent;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+        .card3{
+            grid-area: c3;
+            &::before{
+                background: url(../../img/congratulations.png) no-repeat transparent;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+        .card4{
+            @include row-center;
+            justify-content: space-between;
+            padding: 40px 60px;
+            background: $colr__blue;
+            grid-area: c4;
+            &::before{
+                display: none;
+            }
+            .card__title{
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            .card__desc{
+                font-size: 18px;
+                color: #FFFFFF;
+            }
+            &__discount{
+                padding: 25px 0;
+                height: 100%;
+                width: 40%;
+                background: #F1F4F8;
+                border-radius: $crd__radius;
+                @include row-center;
+                flex-direction: column;
+                span{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: #171717;
+                }
+                &__link{
+                    @include row-center;
+                    gap: 10px;
+                    a{
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 150%;
+                        text-align: center;
+                        text-decoration-line: underline;
+                        text-transform: uppercase;
+                        color: #1749B3;
+                    }
+                }
+            }
+        }
+    }
+}

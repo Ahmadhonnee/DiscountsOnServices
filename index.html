@@ -1,13 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>DiscountsOnServices</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="#">
+                        <div class="nav__logo__icon"></div>
+                    </a>
+                    <a href="#"><span class="nav__logo__name">DiscountsOnServices</span></a>
+                </div>
+                <ul class="nav__items">
+                    <li class="nav__item dropdown">
+                        <a href="#">Subscriptions</a>
+                        <ul class="dropdown__items">
+                            <li>Netflix</li>
+                            <li>YouTube Premium</li>
+                            <li>Spotify</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">FAQ</li>
+                    <li class="nav__item dropdown">
+                        <a href="#">Support</a>
+                        <ul class="dropdown__items">
+                            <li>Contact us</li>
+                            <li>Privacy</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                </ul>
+                <div class="nav__register">
+                    <div class="nav__register__icons">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.00401 22L3.35601 17.032C2.46515 15.5049 1.99711 13.768 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.2328 22.0029 8.49667 21.5352 6.97001 20.645L2.00401 22ZM8.39101 7.308C8.26188 7.31602 8.13569 7.35003 8.02001 7.408C7.91153 7.46943 7.81251 7.54622 7.72601 7.636C7.60601 7.749 7.53801 7.847 7.46501 7.942C7.09542 8.423 6.89662 9.01342 6.90001 9.62C6.90201 10.11 7.03001 10.587 7.23001 11.033C7.63901 11.935 8.31201 12.89 9.20101 13.775C9.41501 13.988 9.62401 14.202 9.84901 14.401C10.9524 15.3725 12.2673 16.073 13.689 16.447L14.258 16.534C14.443 16.544 14.628 16.53 14.814 16.521C15.1053 16.506 15.3896 16.4271 15.647 16.29C15.813 16.202 15.891 16.158 16.03 16.07C16.03 16.07 16.073 16.042 16.155 15.98C16.29 15.88 16.373 15.809 16.485 15.692C16.568 15.606 16.64 15.505 16.695 15.39C16.773 15.227 16.851 14.916 16.883 14.657C16.907 14.459 16.9 14.351 16.897 14.284C16.893 14.177 16.804 14.066 16.707 14.019L16.125 13.758C16.125 13.758 15.255 13.379 14.724 13.137C14.668 13.1126 14.608 13.0987 14.547 13.096C14.4786 13.089 14.4095 13.0967 14.3443 13.1186C14.2791 13.1405 14.2193 13.1761 14.169 13.223V13.221C14.164 13.221 14.097 13.278 13.374 14.154C13.3325 14.2098 13.2754 14.2519 13.2098 14.2751C13.1443 14.2982 13.0733 14.3013 13.006 14.284C12.9409 14.2666 12.877 14.2445 12.815 14.218C12.691 14.166 12.648 14.146 12.563 14.109L12.558 14.107C11.9859 13.8572 11.4562 13.5198 10.988 13.107C10.862 12.997 10.745 12.877 10.625 12.761C10.2316 12.3842 9.88873 11.958 9.60501 11.493L9.54601 11.398C9.50364 11.3342 9.46937 11.2653 9.44401 11.193C9.40601 11.046 9.50501 10.928 9.50501 10.928C9.50501 10.928 9.74801 10.662 9.86101 10.518C9.9551 10.3983 10.0429 10.2738 10.124 10.145C10.242 9.955 10.279 9.76 10.217 9.609C9.93701 8.925 9.64701 8.244 9.34901 7.568C9.29001 7.434 9.11501 7.338 8.95601 7.319C8.90201 7.313 8.84801 7.307 8.79401 7.303C8.65972 7.29633 8.52515 7.29766 8.39101 7.307V7.308Z"
+                                    fill="#333333" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM8.89 13.17L8.903 13.163L9.773 16.033C9.885 16.344 10.039 16.4 10.226 16.374C10.414 16.349 10.513 16.248 10.636 16.13L11.824 14.982L14.374 16.87C14.84 17.127 15.175 16.994 15.291 16.438L16.948 8.616C17.131 7.888 16.811 7.596 16.246 7.828L6.513 11.588C5.849 11.854 5.853 12.226 6.393 12.391L8.89 13.171V13.17Z"
+                                    fill="#333333" />
+                            </svg>
+                        </a>
+                    </div>
+                    <span class="nav__register__lang dropdown">
+                        EN
+                        <ul class="dropdown__items">
+                            <li>English</li>
+                            <li>Ukraine</li>
+                            <li>Russian</li>
+                        </ul>
+                    </span>
+                    <a class="nav__register__btn lrn--btn" href="#">Log in</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="visually-hidden">DiscountsOnServices</h1>
+                <div class="hero__container">
+                    <div class="hero__start start">
+                        <h2 class="start__title">Start enjoying a benefit
+                            of up to 50%
+                        </h2>
+                        <p class="start__desc">
+                            You have always wanted to
+                            get the same product at a special price for you,
+                            without haggling - and it is yours.
+                        </p>
+                        <a class="start__btn whte--btn" href="#">Start using</a>
+                    </div>
+                    <div class="hero__img"></div>
+                </div>
+            </div>
+        </section>
+        <section class="subscriptions">
+            <div class="container">
+                <h2 class="subscriptions__title">Choose a subscription</h2>
+                <div class="subscriptions__cards">
+
+                    <div class="subscriptions__card card">
+                        <div class="card__container">
+                            <h3 class="card__title">Netflix subscription rates</h3>
+                            <p class="card__desc">
+                                The constant contributes to the task of the same
+                                and thus the intended features and the set relation to the check and set also.
+                            </p>
+                            <a class="card__btn lrn--btn" href="#">Learn more</a>
+                        </div>
+                        <div class="card__img card__img1"></div>
+                    </div>
+
+                    <div class="subscriptions__card card">
+                        <div class="card__container">
+                            <h3 class="card__title">Spotify Premium</h3>
+                            <p class="card__desc">
+                                The constant contributes to the task of the same
+                                and thus the intended features and the set relation to the check and set also.
+                            </p>
+                            <a class="card__btn lrn--btn" href="#">Learn more</a>
+                        </div>
+                        <div class="card__img card__img2"></div>
+                    </div>
+
+                    <div class="subscriptions__card card">
+                        <div class="card__container">
+                            <h3 class="card__title">YouTube Premium </h3>
+                            <p class="card__desc">
+                                The constant contributes to the task of the same
+                                and thus the intended features and the set relation to the check and set also.
+                            </p>
+                            <a class="card__btn lrn--btn" href="#">Learn more</a>
+                        </div>
+                        <div class="card__img card__img3"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="support">
+            <div class="container">
+                <h2 class="support__title">How it works?</h2>
+                <div class="support__cards">
+                    <div class="support__card card card1">
+                        <div class="card__container">
+                            <h3 class="card__title">Step 1</h3>
+                            <p class="card__desc">
+                                Enter your account information
+                            </p>
+                        </div>
+                    </div>
+                    <div class="support__card card card2">
+                        <div class="card__container">
+                            <h3 class="card__title">Step 2</h3>
+                            <p class="card__desc">
+                                Select the desired subscription and plan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="support__card card card3">
+                        <div class="card__container">
+                            <h3 class="card__title">Step 3</h3>
+                            <p class="card__desc">
+                                Pay your bill
+                                with PayPal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="support__card card card4">
+                        <div class="card__container">
+                            <h3 class="card__title">Invite friends</h3>
+                            <p class="card__desc">
+                                Starting today up to 50% for NETFLIX, YOUTUBE,
+                                SPOTIFY subscriptions with a secure payment from PAYPAL
+                            </p>
+                        </div>
+                        <div class="card4__discount">
+                            <span>Click on the link</span>
+                            <div class="card4__discount__link">
+                                <a href="#">Discounts On Services</a>
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 4V1C4 0.734784 4.10536 0.48043 4.29289 0.292893C4.48043 0.105357 4.73478 0 5 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292893C17.8946 0.48043 18 0.734784 18 1V15C18 15.2652 17.8946 15.5196 17.7071 15.7071C17.5196 15.8946 17.2652 16 17 16H14V19C14 19.552 13.55 20 12.993 20H1.007C0.875127 20.0008 0.744397 19.9755 0.622322 19.9256C0.500247 19.8757 
+                                        0.389233 19.8022 0.295659 19.7093C0.202084 19.6164 0.127793 19.5059 0.0770543 19.3841C0.0263156 19.2624 0.000129374 19.1319 0 19L0.00300002 5C0.00300002 4.448 0.453 4 1.01 4H4ZM2.003 6L2 18H12V6H2.003ZM6 4H14V14H16V2H6V4Z"
+                                        fill="#171717" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">About us</h2>
+                <div class="about__cards">
+                    <div class="about__card card">
+                        <div class="card__img"></div>
+                        <p class="card__p">
+                            We offer you a
+                            subscription to various media
+                            services at the best price.
+                        </p>
+                        <p class="card__p">
+                            We have partnered with several companies to help you find the
+                            best prices for your media
+                            subscriptions and provide you with
+                            the best prices for the Premium subscriptions you want.
+                        </p>
+                        <span class="card__bold">It's simple, fast and economical.</span>
+                    </div>
+                    <div class="about__card card2"></div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="faq__maxcont">
+                    <h2 class="faq__title">FAQ</h2>
+                    <div class="faq__cards">
+                        <div class="faq__card">
+                            <h3 class="faq__card__title">The set time has passed, but the invoice has not yet arrived, what should I do?</h3>
+                            <p class="faq__card__desc">Wait for a while! We'll soon send the message</p>
+                        </div>
+                        <div class="faq__card">
+                            <h3 class="faq__card__title">Can I change my Netflix account email and password after purchase?</h3>
+                            <p class="faq__card__desc">Of course you can! Just let us know</p>
+                        </div>
+                        <div class="faq__card">
+                            <h3 class="faq__card__title">Can I add a phone number for password recovery?</h3>
+                            <p class="faq__card__desc">NO! You can't</p>
+                        </div>
+                        <div class="faq__card">
+                            <h3 class="faq__card__title">How soon will I receive the account information I ordered?</h3>
+                            <p class="faq__card__desc">After 10-15 minutes</p>
+                        </div>
+                        <div class="faq__card">
+                            <h3 class="faq__card__title">How to pay?</h3>
+                            <p class="faq__card__desc">Payment options we currently have: PayPal, Bitcoin.</p>
+                        </div>
+                    </div>
+                    <a class="faq__btn spprt--btn" href="#">Support</a>
+                    <div class="faq__request">
+                        <div class="faq__request__text">
+                            <h3 class="faq__request__title">Request for an additional subscription that was not found here</h3>
+                            <p class="faq__request__desc">Disney, Amazon Prime, Microsoft Office, Microsoft Windows</p>
+                        </div>
+                        <a class="faq__request__btn whte--btn" href="#">Request</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item menu">
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <div class="menu__logo">
+                                <a href="#">
+                                    <div class="menu__logo__icon"></div>
+                                </a>
+                                <a href="#"><span class="menu__logo__name">DiscountsOnServices</span></a>
+                            </div>
+                        </li>
+                        <li class="menu__item">It's simple, fast and economical</li>
+                    </ul>
+                </li>
+                <li class="footer__item menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#">Subscriptions</a></li>
+                        <li class="menu__item"><a href="#">Netflix</a></li>
+                        <li class="menu__item"><a href="#">YouTube Premium</a></li>
+                        <li class="menu__item"><a href="#">Spotify</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#">Site navigation</a></li>
+                        <li class="menu__item"><a href="#">About</a></li>
+                        <li class="menu__item"><a href="#">FAQ</a></li>
+                        <li class="menu__item"><a href="#">Support</a></li>
+                    </ul>
+                </li>
+                <li class="footer__item menu">
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <div class="nav__register__icons">
+                                <a href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.34019 36.6663L5.59352 28.3863C4.10875 25.8411 3.32868 22.9463 3.33352 19.9997C3.33352 10.7947 10.7952 3.33301 20.0002 3.33301C29.2052 3.33301 36.6669 10.7947 36.6669 19.9997C36.6669 29.2047 29.2052 36.6663 20.0002 36.6663C17.0548 36.6711 14.1613 35.8916 11.6169 34.408L3.34019 36.6663ZM13.9852 12.1797C13.77 12.193 13.5596 12.2497 13.3669 12.3463C13.1861 12.4487 13.021 12.5767 12.8769 12.7263C12.6769 12.9147 12.5635 13.078 12.4419 13.2363C11.8259 14.038 11.4945 15.022 11.5002 16.033C11.5035 16.8497 11.7169 17.6447 12.0502 18.388C12.7319 19.8913 13.8535 21.483 15.3352 22.958C15.6919 23.313 16.0402 23.6697 16.4152 24.0013C18.2542 25.6204 20.4456 26.7881 22.8152 27.4113L23.7635 27.5563C24.0719 27.573 24.3802 27.5497 24.6902 27.5347C25.1756 27.5096 25.6495 27.3782 26.0785 27.1497C26.3552 27.003 26.4852 26.9297 26.7169 26.783C26.7169 26.783 26.7885 26.7363 26.9252 26.633C27.1502 26.4663 27.2885 26.348 27.4752 26.153C27.6135 26.0097 27.7335 25.8413 27.8252 25.6497C27.9552 25.378 28.0852 24.8597 28.1385 24.428C28.1785 24.098 28.1668 23.918 28.1618 23.8063C28.1552 23.628 28.0069 23.443 27.8452 23.3647L26.8752 22.9297C26.8752 22.9297 25.4252 22.298 24.5402 21.8947C24.4469 21.854 24.3469 21.8308 24.2452 21.8263C24.1312 21.8146 24.0159 21.8275 23.9073 21.864C23.7986 21.9005 23.699 21.9598 23.6152 22.038V22.0347C23.6069 22.0347 23.4952 22.1297 22.2902 23.5897C22.221 23.6826 22.1258 23.7528 22.0165 23.7914C21.9073 23.83 21.789 23.8352 21.6769 23.8063C21.5683 23.7773 21.4619 23.7405 21.3585 23.6963C21.1518 23.6097 21.0802 23.5763 20.9385 23.5147L20.9302 23.5113C19.9767 23.095 19.0939 22.5328 18.3135 21.8447C18.1035 21.6613 17.9085 21.4613 17.7085 21.268C17.0528 20.6401 16.4814 19.9297 16.0085 19.1547L15.9102 18.9963C15.8396 18.8899 15.7825 18.7752 15.7402 18.6547C15.6769 18.4097 15.8419 18.213 15.8419 18.213C15.8419 18.213 16.2469 17.7697 16.4352 17.5297C16.592 17.3302 16.7383 17.1227 16.8735 16.908C17.0702 16.5913 17.1319 16.2663 17.0285 16.0147C16.5619 14.8747 16.0785 13.7397 15.5819 12.613C15.4835 12.3897 15.1919 12.2297 14.9269 12.198C14.8369 12.188 14.7469 12.178 14.6569 12.1713C14.433 12.1602 14.2087 12.1624 13.9852 12.178V12.1797Z" fill="white"/>
+                                    </svg>                                        
+                                <a href="#">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.0002 36.6663C10.7952 36.6663 3.3335 29.2047 3.3335 19.9997C3.3335 10.7947 10.7952 3.33301 20.0002 3.33301C29.2052 3.33301 36.6668 10.7947 36.6668 19.9997C36.6668 29.2047 29.2052 36.6663 20.0002 36.6663ZM14.8168 21.9497L14.8385 21.938L16.2885 26.7213C16.4752 27.2397 16.7318 27.333 17.0435 27.2897C17.3568 27.248 17.5218 27.0797 17.7268 26.883L19.7068 24.9697L23.9568 28.1163C24.7335 28.5447 25.2918 28.323 25.4852 27.3963L28.2468 14.3597C28.5518 13.1463 28.0185 12.6597 27.0768 13.0463L10.8552 19.313C9.7485 19.7563 9.75516 20.3763 10.6552 20.6513L14.8168 21.9513V21.9497Z" fill="white"/>
+                                    </svg>                                        
+                                </a>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <span class="menu__lang dropdown footerdropdown">
+                                EN
+                                <ul class="dropdown__items footerdropdown__items">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Ukraine</a></li>
+                                    <li><a href="#">Russian</a></li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer__author">
+                <li class="footer__author__item"><a href="#">Privacy Policy</a></li>
+                <li class="footer__author__item"><a href="#">Copyright 2021 © All Rights Reserved</a></li>
+                <li class="footer__author__item"><a href="https://github.com/Ahmadhonnee">Developed by Ahmadhonne®</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,74 @@
+.header{
+    padding: 10px 0;
+    background: #ffffff;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            &__icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+                height: 55px;
+                background: url(../../img/logo.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            &__name{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 130%;
+                color: #171717;
+                user-select: none;
+            }
+        }
+        &__items{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 65px;
+
+
+            list-style: none;
+        }
+        &__item{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            cursor: pointer;
+        }
+        &__register{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            &__icons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            &__btn{
+                padding: 18px 40px;
+
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 130%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                transition: all .2s ease-in;
+                transition-delay: .1s;
+            }
+        }
+    }
+}

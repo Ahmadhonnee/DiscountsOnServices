@@ -19,3 +19,140 @@
     border: 0;
     clip: rect(0 0 0 0)
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    background: #E5E5E5;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 110%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 10px;
+        height: 5px;
+
+        background: url(../img/Vector.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: all .3s ease-in;
+        transition-delay: .5s;
+    }
+    &:hover{
+        &::after{
+            transform: rotate(180deg);
+        }
+    }
+    &:hover{
+        &>.dropdown__items{
+            transform: translateY(0px);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__items{
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        justify-content: space-between;
+        width: max-content;
+        padding: 20px 0;
+        
+        background: #FFFFFF !important;
+        color: #171717 !important;
+        box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+        border-radius: 16px;
+        list-style: none;
+        
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all .3s ease-in;
+        transition-delay: .5s;
+        li{
+            padding: 0 20px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .1s ease-in;
+        }
+        &>li:hover{
+            color: #FFFFFF;
+            background: #1749B3;
+        }
+    }
+}
+.lrn--btn{
+    border-radius: $btn__radius;
+    background: $colr__blue;
+    border: 2px solid $colr__blue;
+    color: $colr__white;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    transition-delay: .1ms;
+    &:hover{
+        background: transparent;
+        color: $colr__blackish;
+    }
+    &:active{
+        background: $colr__blue;
+        color: $colr__white;
+        opacity: 0.7;
+    }
+}
+.spprt--btn{
+    border-radius: $btn__radius;
+    background: $colr__grayish;
+    border: 2px solid $colr__grayish;
+    color: $colr__white;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    transition-delay: .1ms;
+    &:hover{
+        background: transparent;
+        color: $colr__blackish;
+    }
+    &:active{
+        background: $colr__grayish;
+        color: $colr__white;
+        opacity: 0.7;
+    }
+}
+.whte--btn{
+    border-radius: $btn__radius;
+    background: $colr__white;
+    border: 2px solid $colr__white;
+    color: $colr__blackish;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+    transition-delay: .1ms;
+    &:hover{
+        background: transparent;
+        color: $colr__white;
+    }
+    &:active{
+        background: $colr__white;
+        color: $colr__blackish;
+        opacity: 0.7;
+    }
+}

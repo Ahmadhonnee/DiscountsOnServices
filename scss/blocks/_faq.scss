@@ -1,0 +1,119 @@
+$faq__padding:40px;
+.faq{
+    padding: 60px 0;
+    &__maxcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        @extend .subscriptions__title;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,100px);
+        gap: 16px;
+    }
+    &__card{
+        position: relative;
+        padding: $faq__padding;
+        background: $crd__bckgr;
+        border-radius: $crd__radius;
+        &__title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            color: #171717;
+        }
+        &__desc{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #333333;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all .3s ease-in;
+            // transition-delay: .7s;
+            &:hover{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: $faq__padding;
+            width: 40px;
+            height: 40px;
+            border-radius: $btn__radius;
+            background: rgba(23, 23, 23, 0.05);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: $faq__padding;
+            width: 40px;
+            height: 40px;
+            border-radius: $btn__radius;
+            background: url(../../img/Vectordown.svg) no-repeat transparent;
+            background-position: center;
+            transition: all .5s ease-in;
+            transition-delay: .5s;
+        }
+        &:hover{
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__btn{
+        display: inline-block;
+        margin: 40px auto;
+        padding: 16px 86px;
+
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 130%;
+    }
+    &__request{
+        margin: 40px 0;
+        background: $colr__blue;
+        padding: 40px 60px;
+        border-radius: $crd__radius;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__text{
+            width: 60%;
+            height: 100%;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        &__desc{
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+        &__btn{
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 130%;
+            padding: 16px 112px;
+        }
+    }
+}

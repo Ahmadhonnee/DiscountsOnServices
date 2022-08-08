@@ -1,0 +1,71 @@
+.subscriptions{
+    padding: 40px 0;
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        text-align: center;
+        color: #171717;
+        margin-bottom: 30px;
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .card{
+        width: 100%;
+        height: 340px;
+        background: $crd__bckgr;
+        border-radius: $crd__radius;
+        @include row-center;
+        justify-content: space-between;
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 40%;
+            padding: 60px;
+        }
+        &__title{
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 140%;
+            color: #171717;
+        }
+        &__desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #333333;
+            margin: 20px 0 40px 0;
+        }
+        &__btn{
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 130%;
+            padding: $crd__padding;
+        }
+        &__img{
+            width: 50%;
+            height: 100%;
+            border-radius: $crd__radius;
+            background: url(../img/Netflix.png) no-repeat #000000;
+            background-position: center;
+            background-size: contain;
+        }
+        &__img2{
+            background: url(../../img/Spotify.png) no-repeat #1ed760;
+            background-position: center;
+            background-size: contain;
+        }
+        &__img3{
+            background: url(../../img/Youtube.png) no-repeat #EBDCDC;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

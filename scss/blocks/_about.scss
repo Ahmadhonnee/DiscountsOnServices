@@ -1,0 +1,46 @@
+.about{
+    padding: 60px;
+    &__title{
+        @extend .subscriptions__title;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: minmax(35%,50%) minmax(35%,50%);
+        grid-template-rows: 500px;
+        gap: 10px;
+        .card{
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: $crd__bckgr;
+            box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+            border-radius: $crd__radius;
+            &__img{
+                width: 130px;
+                height: 130px;
+                background: url(../../img/logo.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            &__p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #333333;
+            }
+            &__bold{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                color: #171717;
+            }
+        }
+        .card2{
+            border-radius: $crd__radius;
+            background: url(../../img/redgirl.png) no-repeat $crd__bckgr;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
