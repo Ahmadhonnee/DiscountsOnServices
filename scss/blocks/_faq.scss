@@ -20,11 +20,14 @@ $faq__padding:40px;
         padding: $faq__padding;
         background: $crd__bckgr;
         border-radius: $crd__radius;
+        
         &__title{
             font-weight: 700;
             font-size: 18px;
             line-height: 150%;
             color: #171717;
+            transition: all .3s ease-in;
+            transition-delay: .7s;
         }
         &__desc{
             font-weight: 400;
@@ -33,14 +36,11 @@ $faq__padding:40px;
             color: #333333;
             opacity: 0;
             visibility: hidden;
-            transform: translateY(-10px);
+            transform: translateY(10px);
             transition: all .3s ease-in;
-            // transition-delay: .7s;
-            &:hover{
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0px);
-            }
+            transition-delay: .7s;
+            width: 100%;
+            height: 100%;
         }
         &::before{
             content: "";
@@ -116,4 +116,12 @@ $faq__padding:40px;
             padding: 16px 112px;
         }
     }
+}
+.faq__card:hover >.faq__card__desc{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+}
+.faq__card:hover > .faq__card__title{
+    transform: translateY(-18px);
 }
